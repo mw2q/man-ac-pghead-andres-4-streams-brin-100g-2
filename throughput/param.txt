@@ -1,0 +1,242 @@
+allow_system_table_mods|off|default
+application_name|psql|client
+archive_command|(disabled)|default
+archive_mode|off|default
+archive_timeout|0|default
+array_nulls|on|default
+authentication_timeout|60|default
+autovacuum|on|default
+autovacuum_analyze_scale_factor|0.1|default
+autovacuum_analyze_threshold|50|default
+autovacuum_freeze_max_age|200000000|default
+autovacuum_max_workers|3|default
+autovacuum_multixact_freeze_max_age|400000000|default
+autovacuum_naptime|60|default
+autovacuum_vacuum_cost_delay|20|default
+autovacuum_vacuum_cost_limit|-1|default
+autovacuum_vacuum_scale_factor|0.2|default
+autovacuum_vacuum_threshold|50|default
+autovacuum_work_mem|-1|default
+backslash_quote|safe_encoding|default
+bgwriter_delay|200|default
+bgwriter_lru_maxpages|100|default
+bgwriter_lru_multiplier|2|default
+block_size|8192|default
+bonjour|off|default
+bonjour_name||default
+bytea_output|hex|default
+check_function_bodies|on|default
+checkpoint_completion_target|0.5|default
+checkpoint_segments|300|command line
+checkpoint_timeout|3600|command line
+checkpoint_warning|30|default
+client_encoding|SQL_ASCII|default
+client_min_messages|notice|default
+cluster_name||default
+commit_delay|0|default
+commit_siblings|5|default
+config_file|/data/sekondquad/dbt3/pgdataandres/postgresql.conf|override
+constraint_exclusion|partition|default
+cpu_index_tuple_cost|0.005|default
+cpu_operator_cost|0.0025|default
+cpu_tuple_cost|0.01|default
+cursor_tuple_fraction|0.1|default
+data_checksums|off|override
+data_directory|/data/sekondquad/dbt3/pgdataandres|override
+DateStyle|ISO, MDY|configuration file
+db_user_namespace|off|default
+deadlock_timeout|1000|default
+debug_assertions|off|default
+debug_pretty_print|on|default
+debug_print_parse|off|default
+debug_print_plan|off|default
+debug_print_rewritten|off|default
+default_statistics_target|1000|command line
+default_tablespace||default
+default_text_search_config|pg_catalog.english|configuration file
+default_transaction_deferrable|off|default
+default_transaction_isolation|read committed|default
+default_transaction_read_only|off|default
+default_with_oids|off|default
+dynamic_library_path|$libdir|default
+dynamic_shared_memory_type|posix|configuration file
+effective_cache_size|26214400|command line
+effective_io_concurrency|1|default
+enable_bitmapscan|on|default
+enable_hashagg|on|default
+enable_hashjoin|on|default
+enable_indexonlyscan|on|default
+enable_indexscan|on|default
+enable_material|on|default
+enable_mergejoin|on|default
+enable_nestloop|on|default
+enable_seqscan|on|default
+enable_sort|on|default
+enable_tidscan|on|default
+escape_string_warning|on|default
+event_source|PostgreSQL|default
+exit_on_error|off|default
+external_pid_file||default
+extra_float_digits|0|default
+from_collapse_limit|8|default
+fsync|on|default
+full_page_writes|on|default
+geqo|on|default
+geqo_effort|5|default
+geqo_generations|0|default
+geqo_pool_size|0|default
+geqo_seed|0|default
+geqo_selection_bias|2|default
+geqo_threshold|12|default
+gin_fuzzy_search_limit|0|default
+hba_file|/data/sekondquad/dbt3/pgdataandres/pg_hba.conf|override
+hot_standby|off|default
+hot_standby_feedback|off|default
+huge_pages|try|default
+ident_file|/data/sekondquad/dbt3/pgdataandres/pg_ident.conf|override
+ignore_checksum_failure|off|default
+ignore_system_indexes|off|default
+integer_datetimes|on|default
+IntervalStyle|postgres|default
+join_collapse_limit|8|default
+krb_caseins_users|off|default
+krb_server_keyfile||default
+lc_collate|C|override
+lc_ctype|C|override
+lc_messages|C|configuration file
+lc_monetary|C|configuration file
+lc_numeric|C|configuration file
+lc_time|C|configuration file
+listen_addresses|localhost|default
+lo_compat_privileges|off|default
+local_preload_libraries||default
+lock_timeout|0|default
+log_autovacuum_min_duration|0|command line
+log_checkpoints|on|command line
+log_connections|off|default
+log_destination|stderr|default
+log_directory|pg_log|default
+log_disconnections|off|default
+log_duration|off|default
+log_error_verbosity|verbose|command line
+log_executor_stats|on|command line
+log_file_mode|0600|default
+log_filename|postgresql-%Y-%m-%d_%H%M%S.log|default
+log_hostname|off|default
+log_line_prefix|%t [%p]: [%l-1] |command line
+log_lock_waits|on|command line
+log_min_duration_statement|-1|default
+log_min_error_statement|error|default
+log_min_messages|warning|default
+log_parser_stats|off|default
+log_planner_stats|off|default
+log_replication_commands|off|default
+log_rotation_age|1440|default
+log_rotation_size|10240|default
+log_statement|all|command line
+log_statement_stats|off|default
+log_temp_files|0|command line
+log_timezone|UTC|configuration file
+log_truncate_on_rotation|off|default
+logging_collector|off|default
+maintenance_work_mem|65536|default
+max_connections|100|configuration file
+max_files_per_process|1000|default
+max_function_args|100|default
+max_identifier_length|63|default
+max_index_keys|32|default
+max_locks_per_transaction|64|default
+max_pred_locks_per_transaction|64|default
+max_prepared_transactions|0|default
+max_replication_slots|0|default
+max_stack_depth|2048|environment variable
+max_standby_archive_delay|30000|default
+max_standby_streaming_delay|30000|default
+max_wal_senders|0|default
+max_worker_processes|8|default
+password_encryption|on|default
+port|5500|command line
+post_auth_delay|0|default
+pre_auth_delay|0|default
+quote_all_identifiers|off|default
+random_page_cost|4|default
+restart_after_crash|on|default
+row_security|on|default
+search_path|"$user", public|default
+segment_size|131072|default
+seq_page_cost|1|default
+server_encoding|SQL_ASCII|override
+server_version|9.5devel|default
+server_version_num|90500|default
+session_preload_libraries||default
+session_replication_role|origin|default
+shared_buffers|1048576|command line
+shared_preload_libraries||default
+sql_inheritance|on|default
+ssl|off|default
+ssl_ca_file||default
+ssl_cert_file|server.crt|default
+ssl_ciphers|none|default
+ssl_crl_file||default
+ssl_ecdh_curve|none|default
+ssl_key_file|server.key|default
+ssl_prefer_server_ciphers|on|default
+ssl_renegotiation_limit|524288|default
+standard_conforming_strings|on|default
+statement_timeout|0|default
+stats_temp_directory|pg_stat_tmp|default
+superuser_reserved_connections|3|default
+synchronize_seqscans|on|default
+synchronous_commit|on|default
+synchronous_standby_names||default
+syslog_facility|local0|default
+syslog_ident|postgres|default
+tcp_keepalives_count|0|default
+tcp_keepalives_idle|0|default
+tcp_keepalives_interval|0|default
+temp_buffers|1024|default
+temp_file_limit|-1|default
+temp_tablespaces||default
+TimeZone|UTC|configuration file
+timezone_abbreviations|Default|default
+trace_notify|off|default
+trace_recovery_messages|log|default
+trace_sort|off|default
+track_activities|on|default
+track_activity_query_size|1024|default
+track_counts|on|default
+track_functions|none|default
+track_io_timing|off|default
+transaction_deferrable|off|override
+transaction_isolation|read committed|override
+transaction_read_only|off|override
+transform_null_equals|off|default
+unix_socket_directories|/tmp|default
+unix_socket_group||default
+unix_socket_permissions|0777|default
+update_process_title|on|default
+vacuum_cost_delay|0|default
+vacuum_cost_limit|200|default
+vacuum_cost_page_dirty|20|default
+vacuum_cost_page_hit|1|default
+vacuum_cost_page_miss|10|default
+vacuum_defer_cleanup_age|0|default
+vacuum_freeze_min_age|50000000|default
+vacuum_freeze_table_age|150000000|default
+vacuum_multixact_freeze_min_age|5000000|default
+vacuum_multixact_freeze_table_age|150000000|default
+wal_block_size|8192|default
+wal_buffers|2048|override
+wal_keep_segments|0|default
+wal_level|minimal|default
+wal_log_hints|off|default
+wal_receiver_status_interval|10|default
+wal_receiver_timeout|60000|default
+wal_segment_size|2048|default
+wal_sender_timeout|60000|default
+wal_sync_method|fdatasync|default
+wal_writer_delay|200|default
+work_mem|1048576|command line
+xmlbinary|base64|default
+xmloption|content|default
+zero_damaged_pages|off|default

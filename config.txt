@@ -1,0 +1,15 @@
+node: axle
+kernel: Linux 3.11.0-17-generic
+distribution: fixme
+dbver: PostgreSQL 9.5devel
+sysstat: 10.0.3
+CPUS: 64
+MHz:  1200.000
+model:  Intel(R) Xeon(R) CPU E5-4620 0 @ 2.20GHz
+memory:        264119556 kB
+scale_factor: 100
+num_stream: 4
+load_parameters: -c shared_buffers=8GB -c work_mem=1GB -c maintenance_work_mem=4GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000 -c log_checkpoints=on -c log_autovacuum_min_duration=0 -c log_executor_stats=on -c log_error_verbosity=VERBOSE -c log_line_prefix='%t [%p]: [%l-1] ' -c log_lock_waits=on -c log_statement=all -c log_temp_files=0
+power_parameters: -c shared_buffers=8GB -c work_mem=1GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000 -c log_checkpoints=on -c log_autovacuum_min_duration=0 -c log_executor_stats=on -c log_error_verbosity=VERBOSE -c log_line_prefix='%t [%p]: [%l-1] ' -c log_lock_waits=on -c log_statement=all -c log_temp_files=0
+throughput_parameters: -c shared_buffers=8GB -c work_mem=1GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000 -c log_checkpoints=on -c log_autovacuum_min_duration=0 -c log_executor_stats=on -c log_error_verbosity=VERBOSE -c log_line_prefix='%t [%p]: [%l-1] ' -c log_lock_waits=on -c log_statement=all -c log_temp_files=0
+shmmax: 1099511627776

@@ -1,0 +1,44 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	c_count,
+	count(*) as custdist
+from
+	(
+		select
+			c_custkey,
+			count(o_orderkey)
+		from
+			customer left outer join orders on
+				c_custkey = o_custkey
+				and o_comment not like '%unusual%accounts%'
+		group by
+			c_custkey
+	) as c_orders (c_custkey, c_count)
+group by
+	c_count
+order by
+	custdist desc,
+	c_count desc;
+                                                     QUERY PLAN                                                      
+---------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=31014813.76..31014814.26 rows=200 width=8)
+   Sort Key: (count(*)), (count(orders.o_orderkey))
+   ->  HashAggregate  (cost=31014804.11..31014806.11 rows=200 width=8)
+         Group Key: count(orders.o_orderkey)
+         ->  GroupAggregate  (cost=26528898.70..30789803.38 rows=15000049 width=8)
+               Group Key: customer.c_custkey
+               ->  Merge Left Join  (cost=26528898.70..29899523.03 rows=148055972 width=8)
+                     Merge Cond: (customer.c_custkey = orders.o_custkey)
+                     ->  Index Only Scan using pk_customer on customer  (cost=0.43..742292.17 rows=15000049 width=4)
+                     ->  Materialize  (cost=26528824.75..27269104.61 rows=148055972 width=8)
+                           ->  Sort  (cost=26528824.75..26898964.68 rows=148055972 width=8)
+                                 Sort Key: orders.o_custkey
+                                 ->  Seq Scan on orders  (cost=0.00..4412265.00 rows=148055972 width=8)
+                                       Filter: ((o_comment)::text !~~ '%unusual%accounts%'::text)
+ Planning time: 3.730 ms
+(15 rows)
+
+COMMIT;
+COMMIT

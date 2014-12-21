@@ -1,0 +1,60 @@
+BEGIN;
+BEGIN
+select
+	c_custkey,
+	c_name,
+	sum(l_extendedprice * (1 - l_discount)) as revenue,
+	c_acctbal,
+	n_name,
+	c_address,
+	c_phone,
+	c_comment
+from
+	customer,
+	orders,
+	lineitem,
+	nation
+where
+	c_custkey = o_custkey
+	and l_orderkey = o_orderkey
+	and o_orderdate >= date '1993-03-01'
+	and o_orderdate < cast(date '1993-03-01' + interval '3 month' as date)
+	and l_returnflag = 'R'
+	and c_nationkey = n_nationkey
+group by
+	c_custkey,
+	c_name,
+	c_acctbal,
+	c_phone,
+	n_name,
+	c_address,
+	c_comment
+order by
+	revenue desc
+LIMIT 20;
+ c_custkey |       c_name       |     revenue      | c_acctbal |          n_name           |                c_address                 |     c_phone     |                                                     c_comment                                                     
+-----------+--------------------+------------------+-----------+---------------------------+------------------------------------------+-----------------+-------------------------------------------------------------------------------------------------------------------
+   6966583 | Customer#006966583 | 939842.117015119 |   8135.55 | INDONESIA                 | Qa3LrXpfgCwAxYpaAWZG2XpgrR               | 19-727-863-3732 | es use carefully about the furiously bold tithes. furiously even packages haggle furiously acro
+   2709832 | Customer#002709832 | 862896.007010688 |   -691.56 | UNITED STATES             | EFVaPrphPu5VC4M8l2cQpeSSGYt              | 34-240-911-3575 | ular accounts are furiously. fluffily close foxes affix carefully against the regular deposits.
+   4745155 | Customer#004745155 | 843669.175614211 |   4579.46 | EGYPT                     | lznq VzWu89veGNapjEQzTLzMIhhVBYc,egc     | 14-404-783-5820 | ymptotes: ideas haggle fluffily pending r
+   4880947 | Customer#004880947 |  834296.55090682 |    3602.2 | ALGERIA                   | Lc9P3uiKrNtDqvikVOaTQ6k6vw1aaOSsdeLRbjJz | 10-297-309-3645 | y regular theodolites wake above the slyly final requests. ironically pending foxes shall have to h
+   2109094 | Customer#002109094 | 811827.721840217 |   4923.09 | IRAN                      | dznL4oMrTU5935jUz3Xij                    | 20-586-458-6475 | al foxes. final accounts haggle furiously against the blithely ironic requests. requests according
+  10175788 | Customer#010175788 | 810424.904497271 |   5387.07 | GERMANY                   | ws9W06mpIH6qTq5by8jmax4BVIVs             | 17-705-219-1603 |  regular requests snooze. quickly regular accounts wake carefully final accounts. final dolphins unwind. even dep
+  11622229 | Customer#011622229 | 808132.747155457 |   -412.76 | SAUDI ARABIA              | zCsZxKqkdmV                              | 30-865-876-4457 |  special grouches x-ray slyly alongside of the furiously spe
+     15452 | Customer#000015452 | 797396.370611245 |   5682.03 | KENYA                     | j7oKmDRwAOWDDm05oeaTGQi552O8mMSLewHe     | 24-562-335-6010 | accounts at the carefully final platelets detec
+   1895560 | Customer#001895560 | 797091.010232809 |    554.55 | ARGENTINA                 | QLt1UHs,JK924ott2db                      | 11-236-792-9160 | te according to the blithely even theod
+   9310303 | Customer#009310303 | 796919.094550724 |    -230.8 | MOROCCO                   | qJvNLEejEstDDTxUpmRvN5DQUyY3OMibhlo      | 25-853-883-5662 | fily final ideas. slyly express deposits are furiously at t
+  14214214 | Customer#014214214 | 794931.705102241 |      22.1 | IRAN                      |  4P8ub1nysFzMa3wF                        | 20-401-172-7923 | iously express theodolites. furiously express ideas around the sly
+   4327504 | Customer#004327504 | 791921.778060101 |   2165.71 | CHINA                     | GvH47rwK0yDhDWLu0HdWbU                   | 28-480-561-7882 | e. unusual accounts nag slyly with the accounts. even ideas wake. idle i
+   8603509 | Customer#008603509 | 790044.698345961 |    1645.7 | UNITED KINGDOM            | kAylOV9NHt,n6Crsj1WTgcljjLu0yUHZ         | 33-398-199-1471 | foxes cajole idly quickly bold deposits. fluffily iro
+   8847016 | Customer#008847016 | 785854.411270538 |   8386.42 | JAPAN                     | XYuawgmqaxv48                            | 22-596-479-1768 | ke. fluffily ironic instructions sleep slyly behind the ironi
+   5271928 | Customer#005271928 | 785442.998156891 |   1093.68 | UNITED KINGDOM            | QEnWceMA0W06uZnBkRgmfJmEyDA4eq qMmAiIQa  | 33-332-619-3383 | s are. final excuses against the deposits integrate furiously throughou
+  12041329 | Customer#012041329 | 780218.087975926 |    5142.3 | EGYPT                     | v6ruqCB0vGouonsyCfs01ci9Uzch             | 14-469-278-2080 | e. regular dolphins nag. furiously final deposits boost according to the ev
+   1163620 | Customer#001163620 | 779113.774999743 |   7930.68 | UNITED KINGDOM            | qB8aAvWqo8vkS757wy                       | 33-382-415-6251 | o the blithely regular deposits. even, slow foxes are sl
+  12923566 | Customer#012923566 | 777827.012152602 |   4404.48 | VIETNAM                   | qIrp WaJWidHNp1d6NesfOS5Jq3K08,IA4UTEc   | 31-990-180-1284 |  above the regular accounts promise quickly silent deposits. quickly special asymptotes haggle furiously
+   5358238 | Customer#005358238 | 777205.358946219 |   7725.76 | MOZAMBIQUE                | QisjVkdiG7Eb VS6DFOPID6,G4lDC8QrMfvOP,Z  | 26-224-481-8648 |  blithely even accounts. express, final pinto beans wake sl
+   6932326 | Customer#006932326 | 775501.975097355 |   6616.44 | ETHIOPIA                  | xZqVMeKm2AWa7xd5x1yNrclX4                | 15-294-683-6677 | cajole: carefully special instructions mold regular, unusual dep
+(20 rows)
+
+COMMIT;
+COMMIT

@@ -1,0 +1,148 @@
+BEGIN;
+BEGIN
+select
+	s_name,
+	count(*) as numwait
+from
+	supplier,
+	lineitem l1,
+	orders,
+	nation
+where
+	s_suppkey = l1.l_suppkey
+	and o_orderkey = l1.l_orderkey
+	and o_orderstatus = 'F'
+	and l1.l_receiptdate > l1.l_commitdate
+	and exists (
+		select
+			*
+		from
+			lineitem l2
+		where
+			l2.l_orderkey = l1.l_orderkey
+			and l2.l_suppkey <> l1.l_suppkey
+	)
+	and not exists (
+		select
+			*
+		from
+			lineitem l3
+		where
+			l3.l_orderkey = l1.l_orderkey
+			and l3.l_suppkey <> l1.l_suppkey
+			and l3.l_receiptdate > l3.l_commitdate
+	)
+	and s_nationkey = n_nationkey
+	and n_name = 'CANADA'
+group by
+	s_name
+order by
+	numwait desc,
+	s_name
+LIMIT 100;
+          s_name           | numwait 
+---------------------------+---------
+ Supplier#000151136        |      25
+ Supplier#000562675        |      25
+ Supplier#000824860        |      25
+ Supplier#000093274        |      24
+ Supplier#000232304        |      23
+ Supplier#000249655        |      23
+ Supplier#000267102        |      23
+ Supplier#000568007        |      23
+ Supplier#000648789        |      23
+ Supplier#000745251        |      23
+ Supplier#000033016        |      22
+ Supplier#000047022        |      22
+ Supplier#000060883        |      22
+ Supplier#000159618        |      22
+ Supplier#000217394        |      22
+ Supplier#000357139        |      22
+ Supplier#000371705        |      22
+ Supplier#000537273        |      22
+ Supplier#000762670        |      22
+ Supplier#000781790        |      22
+ Supplier#000783981        |      22
+ Supplier#000795296        |      22
+ Supplier#000815870        |      22
+ Supplier#000819090        |      22
+ Supplier#000100337        |      21
+ Supplier#000130956        |      21
+ Supplier#000165937        |      21
+ Supplier#000177383        |      21
+ Supplier#000184255        |      21
+ Supplier#000227940        |      21
+ Supplier#000243743        |      21
+ Supplier#000274706        |      21
+ Supplier#000278365        |      21
+ Supplier#000282127        |      21
+ Supplier#000306437        |      21
+ Supplier#000320282        |      21
+ Supplier#000329556        |      21
+ Supplier#000381095        |      21
+ Supplier#000409921        |      21
+ Supplier#000430993        |      21
+ Supplier#000521862        |      21
+ Supplier#000522645        |      21
+ Supplier#000582907        |      21
+ Supplier#000601044        |      21
+ Supplier#000626759        |      21
+ Supplier#000635917        |      21
+ Supplier#000669039        |      21
+ Supplier#000678624        |      21
+ Supplier#000696646        |      21
+ Supplier#000734838        |      21
+ Supplier#000750222        |      21
+ Supplier#000757558        |      21
+ Supplier#000764276        |      21
+ Supplier#000795224        |      21
+ Supplier#000804864        |      21
+ Supplier#000830314        |      21
+ Supplier#000850841        |      21
+ Supplier#000852539        |      21
+ Supplier#000879615        |      21
+ Supplier#000895984        |      21
+ Supplier#000903479        |      21
+ Supplier#000973989        |      21
+ Supplier#000984331        |      21
+ Supplier#000991050        |      21
+ Supplier#000010137        |      20
+ Supplier#000032373        |      20
+ Supplier#000040656        |      20
+ Supplier#000049352        |      20
+ Supplier#000050167        |      20
+ Supplier#000054866        |      20
+ Supplier#000060774        |      20
+ Supplier#000069430        |      20
+ Supplier#000077708        |      20
+ Supplier#000078928        |      20
+ Supplier#000087339        |      20
+ Supplier#000129843        |      20
+ Supplier#000131954        |      20
+ Supplier#000141748        |      20
+ Supplier#000145656        |      20
+ Supplier#000172811        |      20
+ Supplier#000214435        |      20
+ Supplier#000242041        |      20
+ Supplier#000248406        |      20
+ Supplier#000266492        |      20
+ Supplier#000267696        |      20
+ Supplier#000270294        |      20
+ Supplier#000291420        |      20
+ Supplier#000303449        |      20
+ Supplier#000323202        |      20
+ Supplier#000326052        |      20
+ Supplier#000338513        |      20
+ Supplier#000386565        |      20
+ Supplier#000391567        |      20
+ Supplier#000394426        |      20
+ Supplier#000401396        |      20
+ Supplier#000402444        |      20
+ Supplier#000416754        |      20
+ Supplier#000441166        |      20
+ Supplier#000453258        |      20
+ Supplier#000458674        |      20
+(100 rows)
+
+COMMIT;
+COMMIT

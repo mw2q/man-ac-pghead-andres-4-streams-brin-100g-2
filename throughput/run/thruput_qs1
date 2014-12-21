@@ -1,0 +1,33 @@
+Thu Dec 11 23:07:34 UTC 2014: start throughput queriy stream 1 
+[ perf record: Woken up 143 times to write data ]
+[ perf record: Captured and wrote 40.905 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/21/q21-perf.data (~1787177 samples) ]
+[ perf record: Woken up 47 times to write data ]
+[ perf record: Captured and wrote 15.031 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/3/q3-perf.data (~656712 samples) ]
+[ perf record: Woken up 97 times to write data ]
+[ perf record: Captured and wrote 29.319 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/18/q18-perf.data (~1280957 samples) ]
+[ perf record: Woken up 26 times to write data ]
+[ perf record: Captured and wrote 8.639 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/5/q5-perf.data (~377464 samples) ]
+[ perf record: Woken up 7 times to write data ]
+[ perf record: Captured and wrote 2.313 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/11/q11-perf.data (~101047 samples) ]
+[ perf record: Woken up 35 times to write data ]
+[ perf record: Captured and wrote 11.078 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/7/q7-perf.data (~484013 samples) ]
+[ perf record: Woken up 27 times to write data ]
+[ perf record: Captured and wrote 8.175 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/6/q6-perf.data (~357177 samples) ]
+[ perf record: Woken up 109 times to write data ]
+[ perf record: Captured and wrote 31.229 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/20/q20-perf.data (~1364425 samples) ]
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.363 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/17/q17-perf.data (~15853 samples) ]
+[ perf record: Woken up 34 times to write data ]
+[ perf record: Captured and wrote 9.904 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/12/q12-perf.data (~432701 samples) ]
+[ perf record: Woken up 18 times to write data ]
+[ perf record: Captured and wrote 5.745 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/16/q16-perf.data (~250987 samples) ]
+[ perf record: Woken up 48 times to write data ]
+[ perf record: Captured and wrote 14.860 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/15/q15-perf.data (~649250 samples) ]
+[ perf record: Woken up 72 times to write data ]
+[ perf record: Captured and wrote 21.598 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/13/q13-perf.data (~943633 samples) ]
+WARNING:  terminating connection because of crash of another server process
+DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+connection to server was lost
+[ perf record: Woken up 29 times to write data ]
+[ perf record: Captured and wrote 9.850 MB man-ac-pghead-andres-4-streams-brin-100g-2/throughput/results/1/perf/10/q10-perf.data (~430368 samples) ]

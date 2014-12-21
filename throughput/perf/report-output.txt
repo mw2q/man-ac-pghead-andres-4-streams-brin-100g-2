@@ -1,0 +1,63 @@
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/date, maybe install a debug package?
+no symbols found in /bin/date, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/egrep, maybe install a debug package?
+no symbols found in /usr/bin/head, maybe install a debug package?
+no symbols found in /usr/lib/chkrootkit/chkproc, maybe install a debug package?
+no symbols found in /usr/bin/md5sum, maybe install a debug package?
+no symbols found in /usr/bin/basename, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+Failed to open [nvidia], continuing without symbols
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /bin/egrep, maybe install a debug package?
+no symbols found in /usr/bin/head, maybe install a debug package?
+no symbols found in /usr/lib/chkrootkit/chkproc, maybe install a debug package?
+no symbols found in /usr/lib/chkrootkit/chkdirs, maybe install a debug package?
+no symbols found in /usr/bin/dpkg-divert, maybe install a debug package?
+no symbols found in /usr/bin/dpkg-query, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+Failed to open [nvidia], continuing without symbols
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /bin/egrep, maybe install a debug package?
+no symbols found in /usr/bin/head, maybe install a debug package?
+no symbols found in /usr/lib/chkrootkit/chkproc, maybe install a debug package?
+no symbols found in /usr/lib/chkrootkit/chkdirs, maybe install a debug package?
+no symbols found in /usr/bin/cut, maybe install a debug package?
+no symbols found in /usr/bin/md5sum, maybe install a debug package?
+no symbols found in /usr/bin/basename, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+no symbols found in /usr/bin/dpkg-divert, maybe install a debug package?
+no symbols found in /usr/bin/dpkg-query, maybe install a debug package?
+no symbols found in /bin/cat, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /usr/bin/cut, maybe install a debug package?
+no symbols found in /usr/bin/md5sum, maybe install a debug package?
+no symbols found in /usr/bin/basename, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+no symbols found in /usr/bin/dpkg-divert, maybe install a debug package?
+no symbols found in /usr/bin/dpkg-query, maybe install a debug package?
+no symbols found in /bin/cat, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?

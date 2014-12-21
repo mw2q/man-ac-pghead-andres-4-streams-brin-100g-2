@@ -1,0 +1,417 @@
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+Can't annotate native_write_msr_safe:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+Failed to open [nvidia], continuing without symbols
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+Failed to open [nvidia], continuing without symbols
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+Failed to open [nvidia], continuing without symbols
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+no symbols found in /bin/grep, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /usr/lib/sysstat/sadc, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+Failed to open [nvidia], continuing without symbols
+no symbols found in /usr/bin/expand, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+no symbols found in /bin/ps, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/sleep, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/dash, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+no symbols found in /usr/bin/sar.sysstat, maybe install a debug package?
+no symbols found in /bin/sleep, maybe install a debug package?
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+no symbols found in /bin/ps, maybe install a debug package?
+no symbols found in /usr/bin/pidstat, maybe install a debug package?
+Can't annotate intel_idle:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux
+Can't annotate copy_user_generic_string:
+
+No vmlinux file with build id 9122d326772982cd1b14d31fde2ca356f10207d7
+was found in the path.
+
+Please use:
+
+  perf buildid-cache -vu vmlinux
+
+or:
+
+  --vmlinux vmlinux

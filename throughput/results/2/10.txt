@@ -1,0 +1,60 @@
+BEGIN;
+BEGIN
+select
+	c_custkey,
+	c_name,
+	sum(l_extendedprice * (1 - l_discount)) as revenue,
+	c_acctbal,
+	n_name,
+	c_address,
+	c_phone,
+	c_comment
+from
+	customer,
+	orders,
+	lineitem,
+	nation
+where
+	c_custkey = o_custkey
+	and l_orderkey = o_orderkey
+	and o_orderdate >= date '1994-09-01'
+	and o_orderdate < cast(date '1994-09-01' + interval '3 month' as date)
+	and l_returnflag = 'R'
+	and c_nationkey = n_nationkey
+group by
+	c_custkey,
+	c_name,
+	c_acctbal,
+	c_phone,
+	n_name,
+	c_address,
+	c_comment
+order by
+	revenue desc
+LIMIT 20;
+ c_custkey |       c_name       |     revenue      | c_acctbal |          n_name           |                c_address                |     c_phone     |                                                   c_comment                                                    
+-----------+--------------------+------------------+-----------+---------------------------+-----------------------------------------+-----------------+----------------------------------------------------------------------------------------------------------------
+   2377909 | Customer#002377909 | 900887.011854949 |   6823.62 | INDONESIA                 | DhUhheX,nNA uoX9En401PLsWiEGmZjKzvR     | 19-350-716-9588 | ncies wake slyly. never bold patterns are q
+   4645945 | Customer#004645945 | 890724.120025835 |   2317.11 | JORDAN                    | ihxaYa81Cl8z3pUlXX                      | 23-516-919-5498 | kages play furiously ironic excuses. packages print slyly pending packages. blithely pending deposits are ca
+   7246348 | Customer#007246348 | 878136.824227028 |   7484.99 | PERU                      | sCUotLvw2RQxMzcuTBz68lOSLR8L8eCRwpsKNz2 | 27-752-370-8316 | lly about the quietly pending foxes: pinto beans are carefully requests. qui
+   9246808 | Customer#009246808 | 841110.256495747 |   4710.25 | BRAZIL                    | 4qFNp42xu7bMw                           | 12-443-944-1441 | ideas. requests nag. carefully pending theodolites cajole quickly carefully final requests. regula
+   9399409 | Customer#009399409 | 831985.375495732 |   6788.33 | SAUDI ARABIA              | kOgDpbSfksd                             | 30-462-646-7966 | kages doubt ironic ideas. requests cajole. even, regular foxes sleep. furiously even requ
+   5493082 | Customer#005493082 | 831779.832110267 |   9573.54 | ARGENTINA                 | suKKdFwusPUthgyJB,qvUOdQEhgQYlQ6,       | 11-986-407-7709 | ackages. special requests against the regular, pending packages sleep sometimes special packag
+  12552469 | Customer#012552469 | 830578.397735695 |   4515.74 | IRAN                      | czs5rilpcOpcxgX                         | 20-527-497-4932 | e accounts. fluffily ironic deposits cajole. ironically ironic requests wake s
+   4046470 | Customer#004046470 |  815158.15006853 |   5889.04 | UNITED STATES             | B5FarjKvNbaTUHUbY9j,hivr,dIQPbA2J3x5    | 34-381-700-4612 | final, even foxes wake. furiously silent courts sleep carefully. deposits among the bold, even ideas sl
+   7478951 | Customer#007478951 | 808008.181673932 |   -150.13 | IRAN                      | DA,e7COIsNZFb1jwz,vrDt2GJycK            | 20-716-324-9704 | ependencies are. furiously ironic pinto beans wake carefully
+    771608 | Customer#000771608 | 805584.957464212 |   7661.28 | PERU                      |  f7Z8366wKHorwllLHSR587athenlah x5Lq8TM | 27-456-166-9352 | nts snooze furiously from the furiously final accounts. slyly regular accounts cajole carefu
+   1879171 | Customer#001879171 | 802010.872108449 |   7295.93 | PERU                      | ,fMyMKbsOxIAcJbTtYGgMTHq8ymG1sCIBvXAl   | 27-430-252-6939 |  unusual deposits boost carefully ironic accounts. unusual deposits wake caref
+  14856250 | Customer#014856250 | 795760.493042276 |   3518.98 | IRAN                      | ldA3IXuew7FFsWvOU4APFDAFP               | 20-156-445-8135 | deposits. carefully pending platelets sleep according to the enticing requests. furiously reg
+   6589624 | Customer#006589624 | 794439.902772984 |   9381.78 | BRAZIL                    | 8udV 0cvCNgQ5Kv                         | 12-921-482-5572 |  final, express accounts thrash quickly above the furiously ironic dugouts. regular, even deposits throughout 
+   3572281 | Customer#003572281 |  792709.09624366 |    717.19 | ROMANIA                   | eCDgQwSipzQUGE7pmr8kfAj6MAC             | 29-317-248-5871 | along the fluffily even packages use blithely ruthlessly special foxes. express, special ideas nag a
+  14828368 | Customer#014828368 | 780524.128040843 |   6278.46 | CHINA                     | EFCE7p1IK2hb4oYGkDLVttcITJraz rhN       | 28-180-789-5174 | ular foxes. even, even courts detect bold, pending d
+   1191625 | Customer#001191625 |  778820.85958389 |   1079.61 | EGYPT                     | yx1XQNfaPAtqOJ rV ,Zp6FREPxOEg          | 14-883-758-4335 | ites nag carefully blithely pending accounts. theodolites breach furiously. quickly regular patt
+   9442150 | Customer#009442150 | 777751.708287342 |   -114.32 | MOROCCO                   | QWntoT6tT97IRz                          | 25-453-236-4185 |  place of the blithely regular requests. pending instruction
+   5996866 | Customer#005996866 | 775473.482612103 |    914.02 | MOROCCO                   | U25Ito0U7EIKgbnoW                       | 25-866-809-6763 |  carefully dolphins. slyly silent accounts are finally in place of t
+   5716165 | Customer#005716165 | 773238.074584825 |   2085.55 | SAUDI ARABIA              | nPgGT0QAdEYwZ8LmfYo5Su4Vs               | 30-392-906-6465 | was slyly fluffily silent instructions. carefully silent deposits haggle quickly. excuses boost.
+   1481773 | Customer#001481773 | 770010.553597251 |   3546.78 | ROMANIA                   | Zy7kp7QH9NS Jrh,7g 8G,u6D               | 29-487-404-4382 | use among the furiously regular packages. 
+(20 rows)
+
+COMMIT;
+COMMIT

@@ -1,0 +1,37 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	sum(l_extendedprice) / 7.0 as avg_yearly
+from
+	lineitem,
+	part
+where
+	p_partkey = l_partkey
+	and p_brand = 'Brand#43'
+	and p_container = 'SM JAR'
+	and l_quantity < (
+		select
+			0.2 * avg(l_quantity)
+		from
+			lineitem
+		where
+			l_partkey = p_partkey
+	);
+                                                                        QUERY PLAN                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=3628713.40..3628713.41 rows=1 width=4)
+   ->  Nested Loop  (cost=130.35..3628202.82 rows=204232 width=4)
+         ->  Index Only Scan using part_p_container_p_brand_p_partkey_idx on part  (cost=0.56..80556.83 rows=20422 width=4)
+               Index Cond: ((p_container = 'SM JAR'::bpchar) AND (p_brand = 'Brand#43'::bpchar))
+         ->  Index Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem  (cost=129.78..173.62 rows=10 width=12)
+               Index Cond: ((l_partkey = part.p_partkey) AND (l_quantity < (SubPlan 1)))
+               SubPlan 1
+                 ->  Aggregate  (cost=129.20..129.21 rows=1 width=4)
+                       ->  Index Only Scan using lineitem_l_partkey_l_quantity_l_shipmode_idx on lineitem lineitem_1  (cost=0.57..129.12 rows=31 width=4)
+                             Index Cond: (l_partkey = part.p_partkey)
+ Planning time: 2.746 ms
+(11 rows)
+
+COMMIT;
+COMMIT
